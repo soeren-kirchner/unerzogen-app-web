@@ -16,11 +16,12 @@ html, body {
 body {
   background-color: #800032; }
 
-.outerWrapper {
-  overflow: scroll; }
-
 div {
   margin: 0; }
+
+.textLogo {
+  width: 300px;
+  height: auto; }
 
 .content {
   width: 100%;
@@ -28,14 +29,17 @@ div {
   flex-direction: column;
   justify-content: center;
   padding-top: 30px;
-  min-height: 100px; }
-
-.content > div {
-  display: inline-flex;
-  justify-content: center; }
+  background: blueviolet; }
 
 .section {
-  width: 700px;
-  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 80%, #f2f2f2 100%); }
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 70%, #f2f2f2 100%); }
+
+.sectionContent {
+  width: 800px;
+  min-height: 50px; }
 
 /*# sourceMappingURL=style.css.map */
