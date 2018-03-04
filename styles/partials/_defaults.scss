@@ -1,0 +1,24 @@
+$color-bordaux: rgb(128, 0, 50);
+$color-text: rgb(50,50,50);
+
+// Font weights
+// $light: 100;
+$regular: 400;
+$bold: 700;
+
+$default-font-family: 'Lato', sans-serif;
+$default-font-weight: $regular;
+$default-font-size: 16px;
+$default-line-height: 1.5;
+
+$screensize-phone: "only screen and (max-width : 480px)";
+$screensize-tablet: "only screen and (min-width : 480px) and (max-width : 700px)";
+$screensize-monitor: "only screen and (min-width : 700px)";
+
+
+:root {
+    font-family: $default-font-family;
+    font-weight: $default-font-weight;
+    font-size: $default-font-size;
+    line-height: $default-line-height;
+}

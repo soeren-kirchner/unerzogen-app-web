@@ -1,0 +1,9 @@
+@mixin box-shadow ($offset-x: 5px, $offset-y: 5px, $blur-radius: 15px, $spread: 0px, $red: 0, $green: 0, $blue: 0, $alpha: 1) {
+    -webkit-box-shadow: $offset-x $offset-y $blur-radius $spread rgba($red,$green,$blue,$alpha);
+    -moz-box-shadow: $offset-x $offset-y $blur-radius $spread rgba($red,$green,$blue,$alpha);
+    box-shadow: $offset-x $offset-y $blur-radius $spread rgba($red,$green,$blue,$alpha);
+}
+
+@mixin testborder ($color: gray, $width: 2px, $type: solid) {
+    border: $width $type $color; 
+}
