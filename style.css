@@ -1,45 +1,107 @@
 :root {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5; }
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.8em; }
 
-/* https://github.com/necolas/normalize.css/blob/master/normalize.css */
+*, *:before, *:after {
+  box-sizing: border-box; }
+
 body {
   margin: 0;
   padding: 0; }
 
-html, body {
+html,
+body {
   width: 100%;
   height: 100%; }
 
 body {
-  background-color: #800032; }
-
-div {
-  margin: 0; }
+  background-color: green; }
+  @media (min-width: 480px) {
+    body {
+      background-color: yellow; } }
+  @media (min-width: 768px) {
+    body {
+      background-color: white; } }
 
 .textLogo {
-  width: 300px;
+  width: 80%;
+  object-fit: contain;
   height: auto; }
 
-.content {
+.appLogo {
+  object-fit: contain;
   width: 100%;
+  height: auto; }
+
+.logos {
+  object-fit: contain;
+  width: 90%;
+  max-width: 400px;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  flex-basis: auto; }
+
+.content {
+  display: flex;
   justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+  margin: auto;
+  width: 100%;
   padding-top: 30px;
-  background: blueviolet; }
+  background: white; }
+  @media (min-width: 768px) {
+    .content {
+      width: 90%;
+      max-width: 1100px; } }
 
 .section {
+  display: flex;
   width: 100%;
-  min-height: 400px;
+  min-height: 200px;
   display: flex;
   justify-content: center;
-  background: linear-gradient(to bottom, #ffffff 0%, #ffffff 70%, #f2f2f2 100%); }
+  align-items: flex-start;
+  flex-direction: column;
+  align-self: auto;
+  background-color: #f8f8f8;
+  padding: 3% 5% 3% 5%;
+  margin: 10px 0px 10px 0px; }
+  @media (min-width: 480px) {
+    .section {
+      flex-direction: row; } }
 
-.sectionContent {
-  width: 800px;
-  min-height: 50px; }
+.picture {
+  text-align: center; }
+  @media (min-width: 480px) {
+    .picture {
+      width: 45%; } }
+  .picture img {
+    width: 80%;
+    height: auto; }
+
+.text {
+  padding-top: 3%;
+  padding-right: 4%;
+  padding-left: 4%; }
+  @media (min-width: 480px) {
+    .text {
+      width: 55%; } }
+  .text h2 {
+    font-family: 'Hammersmith One', sans-serif; }
+    @media (min-width: 480px) {
+      .text h2 {
+        font-size: 20px; } }
+    @media (min-width: 768px) {
+      .text h2 {
+        font-size: 28px; } }
+  .text p {
+    color: #505050; }
+    @media (min-width: 480px) {
+      .text p {
+        font-size: 14px; } }
+    @media (min-width: 768px) {
+      .text p {
+        font-size: 18px; } }
 
 /*# sourceMappingURL=style.css.map */

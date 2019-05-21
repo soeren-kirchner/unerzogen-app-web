@@ -1,43 +1,147 @@
-html, body{
+html,
+body {
     width: 100%;
     height: 100%;
 }
 
 body {
-    background-color: $color-bordaux;
-}
+    background-color: green;
 
-div {
-    margin: 0;
-    // border: 1px dotted red;
+    @include tablet {
+        background-color: yellow;
+    }
+
+    @include desktop {
+        background-color: white;
+    }
+
+
 }
 
 .textLogo {
-    width: 300px;
+    @include testborder;
+    width: 80%;
+    object-fit: contain;
     height: auto;
 }
 
-.content {
+.appLogo {
+    @include testborder;
+    object-fit: contain;
     width: 100%;
+    height: auto;
+}
+
+.logos {
+    @include testborder;
+    object-fit: contain;
+    width: 90%;
+    max-width: 400px;
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
+    flex-basis: auto;
+}
+
+
+.content {
+    @include testborder;
+
+    display: flex;
     justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: auto;
+    width: 100%;
+
+    @include desktop {
+        width: 90%;
+        max-width: 1100px;
+    }
+
     padding-top: 30px;
-    background: blueviolet;
+    background: white;
 }
 
 .section {
+    @include testborder;
+    display: flex;
     width: 100%;
-    min-height: 400px;
+    min-height: 200px;
     display: flex;
     justify-content: center;
-    background: linear-gradient(to bottom, #ffffff 0%,#ffffff 70%,#f2f2f2 100%);
+    align-items: flex-start;
+    flex-direction: column;
+
+    @include tablet {
+        flex-direction: row;
+    }
+
+    align-self: auto;
+    //background: linear-gradient(to bottom, #ffffff 0%,#ffffff 70%,#f2f2f2 100%);
+    background-color: rgb(248, 248, 248);
+    padding: 3% 5% 3% 5%;
+    margin: 10px 0px 10px 0px;
+
+
 }
 
-.sectionContent {
-    width: 800px;
-    min-height: 50px;
-    
+// .sectionContent {
+//     //width: 900px;
+//     min-height: 50px;
+//     display: flex;
+//     flex-direction: row;
+//     @include testborder(green);
+// }
+
+.picture {
+    @include testborder(red);
+
+    @include tablet {
+        width: 45%;
+    }
+
+    text-align: center;
+
+    img {
+        // margin-top: 10px;
+        // margin-bottom: 30px;
+        width: 80%;
+        height: auto;
+    }
 }
 
+.text {
+    @include testborder(orange);
 
+    @include tablet {
+        width: 55%;
+    }
+
+    padding-top: 3%;
+    padding-right: 4%;
+    padding-left: 4%;
+
+    h2 {
+        font-family: 'Hammersmith One', sans-serif;
+
+        @include tablet {
+            font-size: 20px;
+        }
+
+        @include desktop {
+            font-size: 28px;
+        }
+    }
+
+    p {
+        color: rgb(80, 80, 80);
+
+        @include tablet {
+            font-size: 14px;
+        }
+
+        @include desktop {
+            font-size: 18px;
+        }
+    }
+}

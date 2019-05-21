@@ -1,4 +1,7 @@
-/* https://github.com/necolas/normalize.css/blob/master/normalize.css */
+*, *:before, *:after {
+    box-sizing: border-box;
+    //border: 1px solid gray;
+  }
 
 body {
     margin: 0;
